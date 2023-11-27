@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+  COLORS
+#70CAD1
+#3B7F83 yimin blue (subtitles)
+#DEEFF8 background
+#B08EA2 rose quarz (titles)
+
+-->
+
+<style>
+  li {
+      color: #B08EA2; /* Set your desired color */
+  }
+</style>
   <head>
 
     <meta charset="UTF-8">
@@ -29,7 +43,7 @@ https://templatemo.com/tm-562-space-dynamic
 -->
   </head>
 
-<body>
+<body style="background-color: #DEEFF8;">
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -44,6 +58,12 @@ https://templatemo.com/tm-562-space-dynamic
   </div>
   <!-- ***** Preloader End ***** -->
 
+  <script>
+    function showAlert() {
+        alert("TellMeMore is not yet available for download. Check back later!");
+    }
+</script>
+
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
@@ -53,18 +73,17 @@ https://templatemo.com/tm-562-space-dynamic
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo">
               <!-- <h4>Spac<span>Dyna</span></h4> -->
-              <h4>TellMeMore</h4>
+              <h4 style="color: #3B7F83">TellMeMore</h4>
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#services">About Us</a></li>
+              <li class="scroll-to-section"><a href="#top" style="color: #B08EA2">Home</a></li>
+              <li><a href="#services" style="color: #B08EA2">About Us</a></li>
               <!-- <li class="scroll-to-section"><a href="#services">Services</a></li> -->
-              <li class="scroll-to-section"><a href="#portfolio">Our Design Process</a></li>
-              <li class="scroll-to-section"><a href="#blog">Team</a></li>
-              <!-- <li class="scroll-to-section"><a href="#contact">Message Us</a></li>  -->
-              <!-- <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Download</a></div></li>  -->
+              <li class="scroll-to-section" ><a href="#portfolio" style="color: #B08EA2">Our Design Process</a></li>
+              <li class="scroll-to-section"><a href="#team" style="color: #B08EA2">Team</a></li>
+              <li class="scroll-to-section"><div style="background-color: #B08EA2;" onclick="showAlert()"><a href="#contact">Download</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -79,24 +98,26 @@ https://templatemo.com/tm-562-space-dynamic
 
   <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h2>TellMeMore</h2>
-                <h6>Connect Vulnerably and Consistently</h6>
-                <!-- <p>Space Dynamic is a professional looking HTML template using a Bootstrap 5 (beta 2). This CSS template is free for you provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_parent">TemplateMo</a>.</p> -->
-                
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <!-- <img src="assets/images/banner-right-image.png" alt="team meeting"> -->
-              </div>
-            </div>
-          </div>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <!-- <p>HELLO</p> -->
+
+        <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" style="margin-right: 0px; display:flex; text-align: center; align-items: center;">
+          <h2 style="color: #B08EA2">TellMeMore</h2>
+          <h6 style="color: #3B7F83;">Connect Vulnerably and Consistently</h6>                
         </div>
+
+
+        <!-- <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6" style="justify-content: center;">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <h2 style="color: #B08EA2">TellMeMore</h2>
+                <h6 style="color: #3B7F83;">Connect Vulnerably and Consistently</h6>                
+              </div>
+            </div>
+            
+          </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -167,15 +188,15 @@ https://templatemo.com/tm-562-space-dynamic
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-          <div class="left-image">
-            <!-- <img src="assets/images/services-left-image.png" alt=""> -->
+          <div class="left-image" style="display: flex; justify-content: center;">
+            <img src="assets/images/home-screen.png" alt="" style="aspect-ratio: auto; width: 50%; align-self: center;">
           </div>
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-          <div class="section-heading">
-            <h2>Learn more about TellMeMore</h2>
-            <p>Description of our app!</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/L0hHbqx1XaE?si=SgYzd4eywNGepf2e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="section-heading" style="display: flex; flex-direction: column; align-items: center;">
+            <h2 style="color: #B08EA2;">Learn more about TellMeMore</h2>
+            <p style="color: #3B7F83">Description of our app!</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L0hHbqx1XaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div class="row">
             
@@ -190,7 +211,7 @@ https://templatemo.com/tm-562-space-dynamic
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2>Our Design Process</h2>
+            <h2 style="color: #B08EA2">Our Design Process</h2>
           </div>
         </div>
       </div>
@@ -287,16 +308,16 @@ https://templatemo.com/tm-562-space-dynamic
     }
   </style>
 
-  <div id="portfolio" class="our-portfolio section">
+  <div id="team" class="our-portfolio section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2>The Team</h2>
+            <h2 style="color: #B08EA2">The Team</h2>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row" style=" display: flex; justify-content: space-between;">
         <div class="col-lg-3 col-sm-6">
           <a href="#">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
@@ -305,7 +326,7 @@ https://templatemo.com/tm-562-space-dynamic
                 <p>Description of assignment 1</p>
               </div> -->
               <div class="rectangle">
-                <!-- <img src="assets/images/portfolio-image.png" alt=""> -->
+                <img sytle="aspect-ratio: 1; width: 10%" src="assets/images/chloe.jpg" alt="">
               </div>
               <p>Chloe Pae, Designer/Developer</p>
             </div>
@@ -319,7 +340,7 @@ https://templatemo.com/tm-562-space-dynamic
                 <p>Description of assignment 1</p>
               </div> -->
               <div class="rectangle">
-                <!-- <img src="assets/images/portfolio-image.png" alt=""> -->
+                <img src="assets/images/paige.jpg" alt="">
               </div>
               <p>Paige Olson, Designer/Developer</p>
             </div>
@@ -333,7 +354,7 @@ https://templatemo.com/tm-562-space-dynamic
                 <p>Description of assignment 1</p>
               </div> -->
               <div class="rectangle">
-                <!-- <img src="assets/images/portfolio-image.png" alt=""> -->
+                <img src="assets/images/gabe.jpg" alt="">
               </div>
               <p>Gabe Iluma, Designer/Developer</p>
             </div>
@@ -342,130 +363,6 @@ https://templatemo.com/tm-562-space-dynamic
       </div>
     </div>
   </div>
-
-  <!-- <div id="blog" class="our-blog section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
-          <div class="section-heading">
-            <h2>Check Out What Is <em>Trending</em> In Our Latest <span>News</span></h2>
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
-          <div class="top-dec">
-            <img src="assets/images/blog-dec.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
-          <div class="left-image">
-            <a href="#"><img src="assets/images/big-blog-thumb.jpg" alt="Workspace Desktop"></a>
-            <div class="info">
-              <div class="inner-content">
-                <ul>
-                  <li><i class="fa fa-calendar"></i> 24 Mar 2021</li>
-                  <li><i class="fa fa-users"></i> TemplateMo</li>
-                  <li><i class="fa fa-folder"></i> Branding</li>
-                </ul>
-                <a href="#"><h4>SEO Agency &amp; Digital Marketing</h4></a>
-                <p>Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...</p>
-                <div class="main-blue-button">
-                  <a href="#">Discover More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
-          <div class="right-list">
-            <ul>
-              <li>
-                <div class="left-content align-self-center">
-                  <span><i class="fa fa-calendar"></i> 18 Mar 2021</span>
-                  <a href="#"><h4>New Websites &amp; Backlinks</h4></a>
-                  <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
-                </div>
-                <div class="right-image">
-                  <a href="#"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
-                </div>
-              </li>
-              <li>
-                <div class="left-content align-self-center">
-                  <span><i class="fa fa-calendar"></i> 14 Mar 2021</span>
-                  <a href="#"><h4>SEO Analysis &amp; Content Ideas</h4></a>
-                  <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
-                </div>
-                <div class="right-image">
-                  <a href="#"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
-                </div>
-              </li>
-              <li>
-                <div class="left-content align-self-center">
-                  <span><i class="fa fa-calendar"></i> 06 Mar 2021</span>
-                  <a href="#"><h4>SEO Tips &amp; Digital Marketing</h4></a>
-                  <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
-                </div>
-                <div class="right-image">
-                  <a href="#"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- <div id="contact" class="contact-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <div class="section-heading">
-            <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore et dolores</p>
-            <div class="phone-info">
-              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">010-020-0340</a></span></h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="main-button ">Send Message</button>
-                </fieldset>
-              </div>
-            </div>
-            <div class="contact-dec">
-              <img src="assets/images/contact-decoration.png" alt="">
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
   <footer>
     <div class="container">
