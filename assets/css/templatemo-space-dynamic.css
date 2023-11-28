@@ -252,15 +252,15 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: yellow!important;
+  color: #B08EA2!important;
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: yellow!important;
+  color: #B08EA2!important;
 }
 
 .background-header .nav li a.active {
-  color: yellow!important;
+  color: #B08EA2!important;
 }
 
 .header-area {
@@ -373,17 +373,17 @@ header
 }
 
 .header-area .main-nav .nav li a {
-  color: #2a2a2a;
+  color: #B08EA2
 }
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fe3f40!important;
+  color: #B08EA2!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fe3f40!important;
+  color: #B08EA2!important;
   opacity: 1;
 }
 
@@ -434,7 +434,7 @@ header
   opacity: 1;
   display: block;
   background: #f7f7f7;
-  color: #2a2a2a!important;
+  color: #B08EA2!important;
   padding-left: 20px;
   height: 40px;
   line-height: 40px;
@@ -450,7 +450,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #fe3f40!important;
+  color: #B08EA2!important;
   padding-left: 25px;
 }
 
@@ -680,11 +680,11 @@ header
     padding: 0px !important;
     border: none !important;
     background: #f7f7f7 !important;
-    color: #191a20 !important;
+    color: #B08EA2 !important;
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #fe3f40!important;
+    color: #B08EA2!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -1215,7 +1215,7 @@ Blog
 .our-blog .left-image ul li {
   display: inline-block;
   font-size: 15px;
-  color: #afafaf;
+  color: #B08EA2;
   font-weight: 300;
   margin-right: 20px;
 }
@@ -1225,7 +1225,7 @@ Blog
 }
 
 .our-blog .left-image ul li i {
-  color: #ff4d61;
+  color: #B08EA2;
   font-size: 16px;
   margin-right: 8px;
 }
